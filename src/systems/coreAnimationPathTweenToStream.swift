@@ -58,7 +58,7 @@ public func coreAnimation(_ tween: PathTweenShadow) -> MotionObservable<CGPoint>
         brushLayer.lineWidth = 2
         brushLayer.strokeStart = 0
         brushLayer.strokeEnd = 1
-        brushLayer.lineCap = kCALineJoinRound
+        //brushLayer.lineCap = kCALineJoinRound
         brushLayer.fillColor = UIColor.white.withAlphaComponent(0).cgColor
         brushLayer.strokeColor = UIColor(red: 0xC5/255.0, green: 0x11/255.0, blue: 0x62/255.0, alpha: 1).cgColor
         brushLayer.path = pathValue
@@ -79,11 +79,11 @@ public func coreAnimation(_ tween: PathTweenShadow) -> MotionObservable<CGPoint>
 
             let strokeStartAnimation = CABasicAnimation(keyPath: "strokeStart")
             strokeStartAnimation.duration = animation.duration * 0.75
-            strokeStartAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+              strokeStartAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
             strokeStartAnimation.fromValue = 0
             strokeStartAnimation.toValue = 1
             strokeStartAnimation.beginTime = CACurrentMediaTime() + animation.duration * 0.75
-            strokeStartAnimation.fillMode = kCAFillModeBackwards
+              strokeStartAnimation.fillMode = CAMediaTimingFillMode.backwards
             brushLayer.add(strokeStartAnimation, forKey: "strokeStart")
 
             let lineWidthAnimation = CABasicAnimation(keyPath: "lineWidth")
@@ -128,8 +128,8 @@ extension CGPath {
       let body = unsafeBitCast(info, to: Body.self)
       body(element.pointee)
     }
-    let unsafeBody = unsafeBitCast(body, to: UnsafeMutableRawPointer.self)
-    self.apply(info: unsafeBody, function: unsafeBitCast(callback, to: CGPathApplierFunction.self))
+   // let unsafeBody = unsafeBitCast(body, to: UnsafeMutableRawPointer.self)
+    //self.apply(info: unsafeBody, function: unsafeBitCast(callback, to: CGPathApplierFunction.self))
   }
 
   fileprivate func getAllPoints() -> [CGPoint] {

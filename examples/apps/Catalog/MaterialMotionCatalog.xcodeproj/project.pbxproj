@@ -431,7 +431,6 @@
 				666FAA7E1D384A6B000363DA /* Resources */,
 				D1C0B5DF5DCE9D3EE28C4526 /* Frameworks */,
 				74F7AE96B98817D9D81C5665 /* [CP] Embed Pods Frameworks */,
-				1C06EC17C50EA89E7572042C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,7 +450,6 @@
 				666FAA921D384A6B000363DA /* Resources */,
 				FEF09F4949A5B89F40E1A07C /* Frameworks */,
 				C2218D6A72EAF2AEFF087B63 /* [CP] Embed Pods Frameworks */,
-				1F2A834AEF8014455C179F88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -475,11 +473,12 @@
 				TargetAttributes = {
 					666FAA7F1D384A6B000363DA = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ZGWD8QJUPK;
+						DevelopmentTeam = 99WD9D6Y46;
 						LastSwiftMigration = 0800;
 					};
 					666FAA931D384A6B000363DA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 99WD9D6Y46;
 						LastSwiftMigration = 0800;
 						TestTargetID = 666FAA7F1D384A6B000363DA;
 					};
@@ -490,6 +489,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -525,43 +525,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C06EC17C50EA89E7572042C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../../Pods/Target Support Files/Pods-MaterialMotionCatalog/Pods-MaterialMotionCatalog-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1F2A834AEF8014455C179F88 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../../Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		74F7AE96B98817D9D81C5665 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../../../Pods/Target Support Files/Pods-MaterialMotionCatalog/Pods-MaterialMotionCatalog-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialMotionCatalog/Pods-MaterialMotionCatalog-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CatalogByConvention/CatalogByConvention.framework",
 				"${BUILT_PRODUCTS_DIR}/IndefiniteObservable/IndefiniteObservable.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialMotion/MaterialMotion.framework",
@@ -574,7 +544,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../../Pods/Target Support Files/Pods-MaterialMotionCatalog/Pods-MaterialMotionCatalog-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaterialMotionCatalog/Pods-MaterialMotionCatalog-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2218D6A72EAF2AEFF087B63 /* [CP] Embed Pods Frameworks */ = {
@@ -583,7 +553,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../../../Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IndefiniteObservable/IndefiniteObservable.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialMotion/MaterialMotion.framework",
 			);
@@ -594,7 +564,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../../Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1710CBAF0E494D36483A4BE /* [CP] Check Pods Manifest.lock */ = {
@@ -779,6 +749,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -819,6 +790,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -829,12 +801,12 @@
 			baseConfigurationReference = 773711C342E83B1FF1F9C8BB /* Pods-MaterialMotionCatalog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZGWD8QJUPK;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = Catalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.MaterialMotion;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLeSolutionX.google.MaterialMotion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -843,13 +815,13 @@
 			baseConfigurationReference = 800852A3E58C3B077D36E8DD /* Pods-MaterialMotionCatalog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZGWD8QJUPK;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = Catalog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.MaterialMotion;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLeSolutionX.google.MaterialMotion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -859,12 +831,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.CatalogTests;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLeSolutionX.google.CatalogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaterialMotionCatalog.app/MaterialMotionCatalog";
 			};
 			name = Debug;
@@ -875,12 +848,13 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.CatalogTests;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLeSolutionX.google.CatalogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaterialMotionCatalog.app/MaterialMotionCatalog";
 			};
 			name = Release;
